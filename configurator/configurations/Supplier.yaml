@@ -1,0 +1,18 @@
+file_name: Supplier.yaml
+description: Supplier companies, vendor information, performance metrics, and risk assessments
+versions:
+- version: 0.1.0.0
+  _locked: false
+  add_indexes: 
+  - name: Name Index
+    key:
+      name: 1
+    options:
+      unique: true
+  - name: Last Saved
+    key:
+      saved.at_time: -1
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: Supplier.0.1.0.0.json
